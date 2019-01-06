@@ -260,6 +260,7 @@ public class MainActivity extends AppCompatActivity {
                         }});
 
                         // 言語のヒントを設定
+                        //在 content_main.xml 名字設置為 lang  所以在這個位置抓取使用者當前選取
                         final Spinner selectLang = (Spinner) findViewById(R.id.lang);
 
                         // UIで選択された言語を取得する
