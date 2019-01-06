@@ -264,15 +264,18 @@ public class MainActivity extends AppCompatActivity {
 
                         // UIで選択された言語を取得する
                         List<String> langHint = new ArrayList<String>();
+                        // 抓使用者當前list 選取的 item (jp、cn)
                         langHint.add(selectLang.getSelectedItem().toString());
-
+                        
+                        //放入圖片內容
                         ImageContext ic= new ImageContext();
+                        //說明圖片什麼語言
                         ic.setLanguageHints(langHint);
-
+                        // 放置在 以標記的ImgReq
                         annotateImgReq.setImageContext(ic);
 
 
-                        // リクエストにセット
+                        // リクエストにセット 回傳google API
                         add(annotateImgReq);
                     }});
 
